@@ -17,6 +17,7 @@ module.exports.loadUser = (req, res, next) => {
 }
 
 module.exports.isAuthenticated = (req, res, next) => {
+    console.error('req.user:', req.user)
     if(req.user) {
         next()
     } else {
