@@ -17,9 +17,9 @@ module.exports.sendValidationEmail = (user) => {
         .sendMail({
             from: `"Actividad 4" <${email}>`,
             to: user.email,
-            subject: 'Bienvenido/a a la actividad 3',
+            subject: 'Bienvenido/a a la actividad 4',
             html: `
-                <h1>Bienvenido/a a la actividad 3 </h1>
+                <h1>Bienvenido/a a la actividad 4 </h1>
                 <p>Activa tu cuenta:</p>
                 <a href="https://arq-ser-act4.herokuapp.com/api/users/${user.id}/validate">Pulsa aquí</a>
             `,
