@@ -15,13 +15,13 @@ const trasporter = nodemailer.createTransport({
 module.exports.sendValidationEmail = (user) => {
     trasporter
         .sendMail({
-            from: `"Actividad 3" <${email}>`,
+            from: `"Actividad 4" <${email}>`,
             to: user.email,
             subject: 'Bienvenido/a a la actividad 3',
             html: `
                 <h1>Bienvenido/a a la actividad 3 </h1>
                 <p>Activa tu cuenta:</p>
-                <a href="http://localhost:8000/api/users/${user.id}/validate">Pulsa aquí</a>
+                <a href="https://arq-ser-act4.herokuapp.com/api/users/${user.id}/validate">Pulsa aquí</a>
             `,
         })
         .then(() => {
